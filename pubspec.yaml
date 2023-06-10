@@ -42,7 +42,6 @@ dependencies:
   onesignal_flutter: ^3.4.0
   device_info: ^2.0.3
   dio: ^5.0.2
-  imei_plugin: ^1.2.0
   flutter_local_notifications: ^14.0.0-dev.2
   ntp: ^2.0.0
   flutter_linkify: ^5.0.2
