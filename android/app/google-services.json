@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "546211778899",
+    "firebase_url": "https://absensi-usr-a665b.firebaseio.com",
+    "project_id": "absensi-usr-a665b",
+    "storage_bucket": "absensi-usr-a665b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546211778899:android:52dbe7f79dca37eb8311a6",
+        "android_client_info": {
+          "package_name": "id.ptipd_usr.absensi_usr2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546211778899-p2ftvu64alvq1vit3g39frvpkq36ujhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR4rohZH4EakbJPnulyAvM1fwFEHw7CUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546211778899-p2ftvu64alvq1vit3g39frvpkq36ujhk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "546211778899-v8gos6bj8gqbt2quehousc1n07skca4s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "id.ptipdusr.absensiUsr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

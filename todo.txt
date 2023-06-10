@@ -1,0 +1,44 @@
+ketika pegawai izin, harus diacc kepala unit pegawai tsb
+tentukan berapa macam izin,
+
+============================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          request.time < timestamp.date(2021, 12, 31);
+    }
+  }
+}
+
+=======================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+    	allow read;
+      allow write: if request.resource.data.androidAppVer == '01.03.21';
+    }
+  }
+}
+
+========================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+    	allow read;
+      allow write: if (
+      	request.resource.data.app_log.type=='android' && 
+        request.resource.data.app_log.version == 'v02.03.21'
+        ) || (
+        request.resource.data.app_log.type=='ios' && 
+        request.resource.data.app_log.version == 'v02.03.21'
+        );
+    }
+  }
+}

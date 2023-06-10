@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Presensia</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>absensi_usr</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Buka privasi ini untuk akses media sekarang</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Buka privasi ini untuk akses kalender</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Izinkan Presensia mengakses kamera untuk mengupload foto seperti foto profil ataupun dokumen pendukung DL, Cuti dan Sakit.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Buka privasi ini untuk akses kontak sekarang</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ini memperbolehkan kami menggunakan lokasi anda untuk kebutuhan absensi, agar lokasi absen WFH dan WFO dapat ditemukan</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Buka privasi ini untuk akses microphone sekarang</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Buka privasi ini untuk akses motion sekarang</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Izinkan Presensia mengakses galeri untuk mengupload foto seperti foto profil ataupun dokumen pendukung DL, Cuti dan Sakit.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Buka privasi ini untuk akses speech recognition sekarang</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>
