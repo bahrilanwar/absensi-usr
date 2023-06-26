@@ -1,21 +1,17 @@
+// ignore_for_file: unused_element
+
 import 'dart:convert';
-import 'dart:ffi';
-import 'dart:io';
-import 'dart:math';
 
 import 'package:absensi_usr/app_log.dart';
 import 'package:absensi_usr/staff.dart';
 import 'package:absensi_usr/home_tab.dart';
-import 'package:absensi_usr/register.dart';
 import 'package:absensi_usr/reset_pass.dart';
 import 'package:absensi_usr/session.dart';
 import 'package:absensi_usr/util.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:crypto/crypto.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'bubble_indication_painter.dart';
 

@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, unused_import
 
 import 'dart:async';
 import 'dart:collection';
@@ -226,7 +226,7 @@ class DialogPresensiState extends State<DialogPresensi> {
   }
 
   /// get location method, use a try/catch PlatformException.
-  Future<void> getLocation({isFirstTime: false}) async {
+  Future<void> getLocation({isFirstTime = false}) async {
     try {
       setState(() {
         btKirimTitle = 'MEMUAT LOKASI...';
@@ -278,7 +278,7 @@ class DialogPresensiState extends State<DialogPresensi> {
     }
   }
 
-  Future<void> getLocationIos({isFirstTime: false}) async {
+  Future<void> getLocationIos({isFirstTime = false}) async {
     try {
       setState(() {
         btKirimTitle = 'MEMUAT LOKASI...';

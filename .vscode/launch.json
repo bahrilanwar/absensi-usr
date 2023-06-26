@@ -1,11 +1,15 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "name": "absensi_usr",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Flutter (iPhone 13)",
+            "program": "lib/main.dart",
+            "deviceId": "051D241F-C657-4FD1-BD19-D10F05634EB1",
             "request": "launch",
             "type": "dart"
         }

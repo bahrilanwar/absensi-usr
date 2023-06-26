@@ -1,10 +1,12 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:io';
 
 import 'package:absensi_usr/imei.dart';
 import 'package:absensi_usr/util.dart';
 import 'package:device_info/device_info.dart';
 import 'package:flutter/services.dart';
-import 'package:imei_plugin/imei_plugin.dart';
+import 'package:device_information/device_information.dart';
 
 Future<Map<String, dynamic>> getDeviceInfo() async {
   Map<String, dynamic> deviceData;
@@ -34,12 +36,11 @@ Map<String, dynamic> _readOtherDeviceInfo() {
 
 Future<Map<String, dynamic>> _readAndroidBuildData(
     AndroidDeviceInfo build) async {
-  String platformImei =
-      await ImeiPlugin.getImei(shouldShowRequestPermissionRationale: false);
+  String platformImei = await DeviceInformation.deviceIMEINumber;
 
-  List<String> multiImei = await ImeiPlugin.getImeiMulti();
+  // List<String> multiImei = await ImeiImsiPlugin.getImeiMulti();
 
-  String idunique = await ImeiPlugin.getId();
+  // String idunique = await ImeiImsiPlugin.getId();
   bool isValidIMEI =
       IMEI.isValidIMEI(isNumeric(platformImei) ? int.parse(platformImei) : -1);
 

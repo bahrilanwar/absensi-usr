@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import 'sys_config.dart';
@@ -214,7 +213,7 @@ String dateIndoShort(String date) {
 }
 
 void alert(
-    {BuildContext context, String title: 'Perhatian', List<Widget> children}) {
+    {BuildContext context, String title = 'Perhatian', List<Widget> children}) {
   showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -241,8 +240,8 @@ void callC3(BuildContext context) async {
 
 void alertAct(
     {BuildContext context,
-    bool barrierDismissible: true,
-    String title: 'Perhatian',
+    bool barrierDismissible = true,
+    String title = 'Perhatian',
     Widget content,
     List<Widget> actions}) {
   showDialog(
@@ -277,7 +276,7 @@ bool isNumeric(String s) {
 
 Widget dropDownField(
     String label, String assetPath, TextEditingController controller,
-    {bool isRequired: true, Icon icon}) {
+    {bool isRequired = true, Icon icon}) {
   return FutureBuilder(
     future: parseJsonFromAssets(assetPath),
     builder: (context, snapshot) {

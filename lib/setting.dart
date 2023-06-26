@@ -8,9 +8,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:sliding_switch/sliding_switch.dart';
-import 'package:absensi_usr/waktu_kerja.dart';
 
 import 'ubah_password.dart';
 

@@ -52,6 +52,8 @@ dependencies:
   local_auth: ^2.1.1
   android_intent_plus: ^3.1.1
   sliding_switch: ^1.0.0
+  css_colors: ^1.1.1
+  device_information: ^0.0.4
 
 dev_dependencies:
   flutter_test:

@@ -46,7 +46,7 @@ class _UbahProfilState extends State<UbahProfil> {
 
   Widget _textField(
       TextInputType type, String label, TextEditingController controller,
-      {readonly: false}) {
+      {readonly = false}) {
     ThemeData theme = Theme.of(context);
     return TextFormField(
       style: (readonly) ? TextStyle(color: theme.disabledColor) : null,
@@ -86,7 +86,7 @@ class _UbahProfilState extends State<UbahProfil> {
 
   Widget _dropDownField(
       String label, String assetPath, TextEditingController controller,
-      {bool isRequired: true, bool readOnly: false}) {
+      {bool isRequired = true, bool readOnly = false}) {
     return FutureBuilder(
       future: parseJsonFromAssets(assetPath),
       builder: (context, snapshot) {

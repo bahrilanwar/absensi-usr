@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:absensi_usr/pengajuan_page.dart';
 import 'package:absensi_usr/pengajuan_all.dart';
 import 'package:flutter/material.dart';
@@ -92,7 +94,6 @@ class HomeContentPage extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }

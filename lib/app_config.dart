@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:io';
 
 import 'package:absensi_usr/sys_config.dart';
@@ -35,16 +37,17 @@ class AppConfig {
 
   AppConfig(
       {@required this.androidAppVersion,
-        @required this.iosAppVersion,
-        @required this.isPlayStoreReady,
-        @required this.wfhStatus});
+      @required this.iosAppVersion,
+      @required this.isPlayStoreReady,
+      @required this.wfhStatus});
 
   factory AppConfig.fromJson(Map<String, dynamic> json) {
     return AppConfig(
-        androidAppVersion: json['android_app_version'],
-        iosAppVersion: json['ios_app_version'],
-        isPlayStoreReady: json['is_play_store_ready'],
-        wfhStatus: json['is_wfh_available'],);
+      androidAppVersion: json['android_app_version'],
+      iosAppVersion: json['ios_app_version'],
+      isPlayStoreReady: json['is_play_store_ready'],
+      wfhStatus: json['is_wfh_available'],
+    );
   }
 }
 

@@ -70,7 +70,7 @@ class _FormRegistrasiState extends State<FormRegistrasi> {
 
   Widget _dropDownField(
       String label, String assetPath, TextEditingController controller,
-      {bool isRequired: true}) {
+      {bool isRequired = true}) {
     return FutureBuilder(
       future: parseJsonFromAssets(assetPath),
       builder: (context, snapshot) {

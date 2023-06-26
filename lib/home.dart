@@ -1,6 +1,5 @@
 // ignore_for_file: null_aware_before_operator
 
-import 'package:absensi_usr/presensi_list.dart';
 import 'package:absensi_usr/login.dart';
 import 'package:absensi_usr/dialog_presensi.dart';
 import 'package:absensi_usr/home_content.dart';
@@ -8,7 +7,6 @@ import 'package:absensi_usr/session.dart';
 import 'package:absensi_usr/sys_config.dart';
 import 'package:absensi_usr/util.dart';
 import 'package:android_intent_plus/android_intent.dart';
-import 'package:android_intent_plus/flag.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

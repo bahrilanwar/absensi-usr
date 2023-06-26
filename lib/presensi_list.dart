@@ -1,14 +1,12 @@
 // ignore_for_file: null_aware_in_logical_operator, null_aware_in_condition
 
 import 'package:absensi_usr/app_log.dart';
-import 'package:absensi_usr/presensi_list.dart';
 import 'package:absensi_usr/sys_config.dart';
 import 'package:absensi_usr/util.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:intl/intl.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import 'presensi.dart';

@@ -52,7 +52,7 @@ class Presensi {
 
 // fungsi untuk mendapatkan data presensi hari ini by nomor induk
 Future<Presensi> getTodayPresence(String noInduk,
-    {bool isCekoutNull: false}) async {
+    {bool isCekoutNull = false}) async {
   DateTime now = new DateTime.now();
   QuerySnapshot currPresensi;
   if (isCekoutNull) {
@@ -89,7 +89,7 @@ Future<Presensi> getTodayPresence(String noInduk,
 }
 
 Stream<QuerySnapshot> streamTodayPresence(String noInduk,
-    {bool isCekoutNull: false}) {
+    {bool isCekoutNull = false}) {
   DateTime now = new DateTime.now();
   Stream<QuerySnapshot> currPresensi;
   if (isCekoutNull) {

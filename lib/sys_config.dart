@@ -1,12 +1,6 @@
-import 'dart:convert';
 import 'dart:io';
 
-import 'package:absensi_usr/presensi_list.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:absensi_usr/waktu_kerja.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
-import 'package:dio/dio.dart';
 
 import 'presensi.dart';
 

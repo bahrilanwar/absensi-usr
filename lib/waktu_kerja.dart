@@ -1,13 +1,14 @@
-import 'dart:convert';
-
-import 'package:absensi_usr/sys_config.dart';
 import 'package:dio/dio.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class WaktuKerja {
   final String hari, waktuMasukM, waktuKeluarM, waktuMasukS, waktuKeluarS;
 
-  WaktuKerja({this.hari, this.waktuMasukM, this.waktuKeluarM, this.waktuMasukS, this.waktuKeluarS});
+  WaktuKerja(
+      {this.hari,
+      this.waktuMasukM,
+      this.waktuKeluarM,
+      this.waktuMasukS,
+      this.waktuKeluarS});
 
   factory WaktuKerja.fromJson(Map<String, dynamic> json) {
     return WaktuKerja(
@@ -62,10 +63,9 @@ Future<List<WaktuKerja>> getWaktuKerja() async {
     if (response.statusCode == 200) {
       print('berhasil hit $route');
       List<WaktuKerja> waktuKerjas =
-      (response.data as List).map((d) => WaktuKerja.fromJson(d)).toList();
+          (response.data as List).map((d) => WaktuKerja.fromJson(d)).toList();
       print(waktuKerjas);
       return waktuKerjas;
-
     } else {
       print(
           'failed hit $route : ${response.statusCode}, message : ${response.statusMessage}');
